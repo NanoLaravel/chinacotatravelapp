@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ChinacotaTravel</string>
+    <string name="elevated_button">Elevated button</string>
+    <string name="hola_mundo_pues">Hola mundo pues!</string>
+    <string name="button">Button</string>
+    <string name="soy_un_boton_elevado">soy un boton elevado</string>
 </resources>
