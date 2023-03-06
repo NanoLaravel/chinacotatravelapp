@@ -11,8 +11,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.d("tag en main", "onCreate: hola esta es una prueba del log");
-
-
-    }
+        Lugar lugar = new Lugar("UIS", "Calle 9 #27","una de las mejores u",634400,5, TipoLugar.EDUCACION,
+        7.1377, -73.121);
+}
 }
