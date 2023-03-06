@@ -5,20 +5,23 @@ public class Lugar {
     private int telefono;
     private Long fecha;
     private float valoracion;
-    //private geopunto Posicion;
+    private TipoLugar tipo;
+    private Geopunto Posicion;
+    private double longitud, latitud;
 
 
     public Lugar() {
     }
-    public Lugar(String nombre, String direccion, String uri, String comentario, int telefono, float valoracion) {
+
+    public Lugar(String nombre, String direccion, String comentario, int telefono, float valoracion, TipoLugar tipo, double longitud, double latitud) {
         this.nombre = nombre;
         this.direccion = direccion;
-        this.uri = uri;
         this.comentario = comentario;
         this.telefono = telefono;
         this.valoracion = valoracion;
-
-
+        this.tipo = tipo;
+        this.longitud = longitud;
+        this.latitud = latitud;
     }
 
     public String getNombre() {
@@ -85,6 +88,38 @@ public class Lugar {
         this.valoracion = valoracion;
     }
 
+    public TipoLugar getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(TipoLugar tipo) {
+        this.tipo = tipo;
+    }
+
+    public Geopunto getPosicion() {
+        return Posicion;
+    }
+
+    public void setPosicion(Geopunto posicion) {
+        Posicion = posicion;
+    }
+
+    public double getLongitud() {
+        return longitud;
+    }
+
+    public void setLongitud(double longitud) {
+        this.longitud = longitud;
+    }
+
+    public double getLatitud() {
+        return latitud;
+    }
+
+    public void setLatitud(double latitud) {
+        this.latitud = latitud;
+    }
+
     @Override
     public String toString() {
         return "Lugar{" +
@@ -96,6 +131,10 @@ public class Lugar {
                 ", telefono=" + telefono +
                 ", fecha=" + fecha +
                 ", valoracion=" + valoracion +
+                ", tipo=" + tipo +
+                ", Posicion=" + Posicion +
+                ", longitud=" + longitud +
+                ", latitud=" + latitud +
                 '}';
     }
 }
